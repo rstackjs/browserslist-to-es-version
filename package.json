@@ -1,7 +1,7 @@
 {
   "name": "browserslist-to-es-version",
   "version": "1.2.0",
-  "repository": "https://github.com/rspack-contrib/browserslist-to-es-version",
+  "repository": "https://github.com/rstackjs/browserslist-to-es-version",
   "license": "MIT",
   "type": "module",
   "exports": {
