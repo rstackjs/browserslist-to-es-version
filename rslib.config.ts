@@ -5,6 +5,12 @@ export default defineConfig({
     { format: 'esm', syntax: 'es2021', dts: true },
     { format: 'cjs', syntax: 'es2021' },
   ],
+  source: {
+    entry: {
+      index: './src/index.ts',
+      cli: './src/cli.ts',
+    },
+  },
   output: {
     target: 'node',
   },
