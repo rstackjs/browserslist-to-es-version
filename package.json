@@ -22,7 +22,7 @@
     "dev": "rslib build --watch",
     "lint": "biome check .",
     "lint:write": "biome check . --write",
-    "prepare": "simple-git-hooks && npm run build",
+    "prepare": "simple-git-hooks && rslib build",
     "test": "rstest run",
     "bump": "npx bumpp"
   },
@@ -35,7 +35,7 @@
     ]
   },
   "dependencies": {
-    "browserslist": "^4.28.0"
+    "browserslist": "^4.28.1"
   },
   "devDependencies": {
     "@biomejs/biome": "^2.3.8",

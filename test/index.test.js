@@ -13,6 +13,7 @@ test('should get ECMA version correctly', () => {
   assert.strictEqual(browserslistToESVersion(['Edge >= 85']), 2021);
   assert.strictEqual(browserslistToESVersion(['Edge >= 94']), 2022);
   assert.strictEqual(browserslistToESVersion(['Edge >= 110']), 2023);
+  assert.strictEqual(browserslistToESVersion(['Edge >= 119']), 2024);
 
   // Firefox
   assert.strictEqual(browserslistToESVersion(['firefox >= 50']), 5);
@@ -21,6 +22,7 @@ test('should get ECMA version correctly', () => {
   assert.strictEqual(browserslistToESVersion(['firefox >= 85']), 2021);
   assert.strictEqual(browserslistToESVersion(['firefox >= 93']), 2022);
   assert.strictEqual(browserslistToESVersion(['firefox >= 115']), 2023);
+  assert.strictEqual(browserslistToESVersion(['firefox >= 145']), 2024);
 
   // Chrome
   assert.strictEqual(browserslistToESVersion(['Chrome >= 33']), 5);
@@ -32,6 +34,7 @@ test('should get ECMA version correctly', () => {
   assert.strictEqual(browserslistToESVersion(['Chrome >= 85']), 2021);
   assert.strictEqual(browserslistToESVersion(['Chrome >= 94']), 2022);
   assert.strictEqual(browserslistToESVersion(['Chrome >= 110']), 2023);
+  assert.strictEqual(browserslistToESVersion(['Chrome >= 119']), 2024);
 
   // Opera
   assert.strictEqual(browserslistToESVersion(['opera >= 30']), 5);
@@ -44,6 +47,7 @@ test('should get ECMA version correctly', () => {
   assert.strictEqual(browserslistToESVersion(['opera >= 71']), 2021);
   assert.strictEqual(browserslistToESVersion(['opera >= 80']), 2022);
   assert.strictEqual(browserslistToESVersion(['opera >= 96']), 2023);
+  assert.strictEqual(browserslistToESVersion(['opera >= 105']), 2024);
 
   // Samsung
   assert.strictEqual(browserslistToESVersion(['samsung >= 4']), 5);
@@ -55,6 +59,7 @@ test('should get ECMA version correctly', () => {
   assert.strictEqual(browserslistToESVersion(['samsung >= 14']), 2021);
   assert.strictEqual(browserslistToESVersion(['samsung >= 17']), 2022);
   assert.strictEqual(browserslistToESVersion(['samsung >= 21']), 2023);
+  assert.strictEqual(browserslistToESVersion(['samsung >= 25']), 2024);
 
   // Safari
   assert.strictEqual(browserslistToESVersion(['safari >= 10']), 2015);
@@ -62,6 +67,7 @@ test('should get ECMA version correctly', () => {
   assert.strictEqual(browserslistToESVersion(['safari >= 11']), 2017);
   assert.strictEqual(browserslistToESVersion(['safari >= 16.4']), 2018);
   assert.strictEqual(browserslistToESVersion(['safari >= 17']), 2023);
+  assert.strictEqual(browserslistToESVersion(['safari >= 17.4']), 2024);
 
   // iOS
   assert.strictEqual(browserslistToESVersion(['iOS 8']), 5);
@@ -100,7 +106,7 @@ test('should get ECMA version correctly', () => {
       'last 1 firefox version',
       'last 1 safari version',
     ]),
-    2023,
+    2024,
   );
   assert.strictEqual(
     browserslistToESVersion([
@@ -123,7 +129,7 @@ test('should get ECMA version correctly', () => {
   assert.strictEqual(browserslistToESVersion(['ios_saf 11']), 2017);
 
   // https://github.com/browserslist/browserslist/issues/682
-  assert.strictEqual(browserslistToESVersion(['and_ff >= 78']), 2023);
-  assert.strictEqual(browserslistToESVersion(['and_chr >= 53']), 2023);
-  assert.strictEqual(browserslistToESVersion(['ChromeAndroid >= 53']), 2023);
+  assert.strictEqual(browserslistToESVersion(['and_ff >= 78']), 2024);
+  assert.strictEqual(browserslistToESVersion(['and_chr >= 53']), 2024);
+  assert.strictEqual(browserslistToESVersion(['ChromeAndroid >= 53']), 2024);
 });
