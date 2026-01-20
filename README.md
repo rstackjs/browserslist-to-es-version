@@ -1,7 +1,5 @@
 # browserslist-to-es-version
 
-Convert [browserslist](https://github.com/browserslist/browserslist) query to ECMAScript version.
-
 <p>
   <a href="https://npmjs.com/package/browserslist-to-es-version">
    <img src="https://img.shields.io/npm/v/browserslist-to-es-version?style=flat-square&colorA=564341&colorB=EDED91" alt="npm version" />
@@ -9,6 +7,8 @@ Convert [browserslist](https://github.com/browserslist/browserslist) query to EC
   <img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square&colorA=564341&colorB=EDED91" alt="license" />
   <a href="https://npmcharts.com/compare/browserslist-to-es-version?minimal=true"><img src="https://img.shields.io/npm/dm/browserslist-to-es-version.svg?style=flat-square&colorA=564341&colorB=EDED91" alt="downloads" /></a>
 </p>
+
+Convert [browserslist](https://github.com/browserslist/browserslist) query to ECMAScript version.
 
 ## CLI usage
 
