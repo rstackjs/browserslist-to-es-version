@@ -41,7 +41,7 @@ const resolveESVersion = (version: number, thresholds: number[]) => {
   const ES_VERSIONS: ESVersion[] = [
     2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024,
   ];
-  return ES_VERSIONS[index - 1] ?? defaultVersion;
+  return ES_VERSIONS[index - 1] ?? 5;
 };
 
 export function browsersToESVersion(browsers: string[]): ESVersion {
