@@ -31,6 +31,19 @@ const renameBrowser = (name: string) => {
   return aliases[name] || name;
 };
 
+const resolveESVersion = (version: number, thresholds: number[]) => {
+  const index = thresholds.findIndex((threshold) => version < threshold);
+  const defaultVersion: ESVersion = 2024;
+  if (index === -1) {
+    return defaultVersion;
+  }
+
+  const ES_VERSIONS: ESVersion[] = [
+    2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024,
+  ];
+  return ES_VERSIONS[index - 1] ?? 5;
+};
+
 export function browsersToESVersion(browsers: string[]): ESVersion {
   let esVersion: ESVersion = 2024;
 
@@ -62,27 +75,8 @@ export function browsersToESVersion(browsers: string[]): ESVersion {
       continue;
     }
 
-    if (version < versions[0]) {
-      esVersion = Math.min(5, esVersion) as ESVersion;
-    } else if (version < versions[1]) {
-      esVersion = Math.min(2015, esVersion) as ESVersion;
-    } else if (version < versions[2]) {
-      esVersion = Math.min(2016, esVersion) as ESVersion;
-    } else if (version < versions[3]) {
-      esVersion = Math.min(2017, esVersion) as ESVersion;
-    } else if (version < versions[4]) {
-      esVersion = Math.min(2018, esVersion) as ESVersion;
-    } else if (version < versions[5]) {
-      esVersion = Math.min(2019, esVersion) as ESVersion;
-    } else if (version < versions[6]) {
-      esVersion = Math.min(2020, esVersion) as ESVersion;
-    } else if (version < versions[7]) {
-      esVersion = Math.min(2021, esVersion) as ESVersion;
-    } else if (version < versions[8]) {
-      esVersion = Math.min(2022, esVersion) as ESVersion;
-    } else if (version < versions[9]) {
-      esVersion = Math.min(2023, esVersion) as ESVersion;
-    }
+    const targetVersion = resolveESVersion(version, versions);
+    esVersion = Math.min(targetVersion, esVersion) as ESVersion;
   }
 
   return esVersion;
