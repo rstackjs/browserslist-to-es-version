@@ -9,6 +9,7 @@ export default defineConfig({
     entry: {
       index: './src/index.ts',
       cli: './src/cli.ts',
+      core: './src/core.ts',
     },
   },
   output: {
