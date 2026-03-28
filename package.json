@@ -31,7 +31,7 @@
     "lint": "biome check .",
     "lint:write": "biome check . --write",
     "prepare": "simple-git-hooks && rslib build",
-    "test": "rstest run",
+    "test": "rstest",
     "bump": "npx bumpp"
   },
   "simple-git-hooks": {
