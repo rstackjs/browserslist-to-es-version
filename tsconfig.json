@@ -1,17 +1,20 @@
 {
   "compilerOptions": {
-    "outDir": "./dist",
-    "baseUrl": "./",
-    "target": "ES2020",
-    "lib": ["DOM", "ESNext"],
-    "module": "Node16",
-    "strict": true,
-    "declaration": true,
-    "isolatedModules": true,
-    "esModuleInterop": true,
+    "rootDir": "src",
+    "lib": [
+      "ES2023"
+    ],
+    "types": [
+      "node"
+    ],
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "noEmit": true,
     "skipLibCheck": true,
-    "resolveJsonModule": true,
-    "moduleResolution": "Node16"
+    "isolatedModules": true,
+    "useDefineForClassFields": true
   },
-  "include": ["src"]
+  "include": [
+    "src"
+  ]
 }
