@@ -36,13 +36,13 @@ npm add browserslist-to-es-version -D
 Example:
 
 ```ts
-import { browserslistToESVersion } from "browserslist-to-es-version";
+import { browserslistToESVersion } from 'browserslist-to-es-version';
 
 const esVersion = browserslistToESVersion([
-  "chrome >= 87",
-  "edge >= 88",
-  "firefox >= 78",
-  "safari >= 14",
+  'chrome >= 87',
+  'edge >= 88',
+  'firefox >= 78',
+  'safari >= 14',
 ]);
 
 console.log(esVersion); // 2017
