@@ -1,6 +1,6 @@
 {
   "name": "browserslist-to-es-version",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "repository": "https://github.com/rstackjs/browserslist-to-es-version",
   "license": "MIT",
   "type": "module",
