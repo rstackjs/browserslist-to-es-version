@@ -16,8 +16,6 @@
       "require": "./dist/core.cjs"
     }
   },
-  "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "bin": {
     "browserslist-to-es-version": "./dist/cli.js"
