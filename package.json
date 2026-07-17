@@ -36,18 +36,18 @@
     "pre-commit": "pnpm run lint:write"
   },
   "dependencies": {
-    "browserslist": "^4.28.2"
+    "browserslist": "^4.28.6"
   },
   "devDependencies": {
     "@rslib/core": "^0.23.2",
-    "@rslint/core": "^0.6.1",
-    "@rstest/core": "0.10.4",
-    "@types/node": "^24.13.2",
-    "prettier": "^3.8.4",
+    "@rslint/core": "^0.7.0",
+    "@rstest/core": "0.11.2",
+    "@types/node": "^24.13.3",
+    "prettier": "^3.9.5",
     "simple-git-hooks": "^2.13.1",
     "typescript": "7.0.2"
   },
-  "packageManager": "pnpm@11.6.0",
+  "packageManager": "pnpm@11.13.1",
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
