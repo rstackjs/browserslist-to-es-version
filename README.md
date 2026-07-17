@@ -53,17 +53,7 @@ console.log(esVersion); // 2017
 ```ts
 // Only supports ES5 ~ ES2024
 type ESVersion =
-  | 5
-  | 2015
-  | 2016
-  | 2017
-  | 2018
-  | 2019
-  | 2020
-  | 2021
-  | 2022
-  | 2023
-  | 2024;
+  5 | 2015 | 2016 | 2017 | 2018 | 2019 | 2020 | 2021 | 2022 | 2023 | 2024;
 
 function browserslistToESVersion(browsers: string[]): ESVersion;
 ```
