@@ -1,15 +1,5 @@
 export type ESVersion =
-  | 5
-  | 2015
-  | 2016
-  | 2017
-  | 2018
-  | 2019
-  | 2020
-  | 2021
-  | 2022
-  | 2023
-  | 2024;
+  5 | 2015 | 2016 | 2017 | 2018 | 2019 | 2020 | 2021 | 2022 | 2023 | 2024;
 
 // The minimal version for [es2015, es2016, es2017, es2018, es2019, es2020, es2021, es2022, es2023, es2024]
 const ES_VERSIONS_MAP: Record<string, number[]> = {
