@@ -35,7 +35,7 @@ jobs:
           run_install: true
 
       - name: Build Packages
-        run: pnpm build
+        run: node --run build
 
       - name: Run Test
-        run: pnpm run test
+        run: node --run test

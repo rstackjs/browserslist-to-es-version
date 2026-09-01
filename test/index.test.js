@@ -1,4 +1,4 @@
-import { assert, test } from '@rstest/core';
+import { assert, test } from 'rstack/test';
 import { browserslistToESVersion } from '../src';
 
 test('should get ECMA version correctly', () => {

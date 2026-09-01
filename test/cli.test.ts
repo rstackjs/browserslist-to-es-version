@@ -3,7 +3,7 @@ import { mkdtemp, rmdir, writeFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { promisify } from 'node:util';
-import { assert, test } from '@rstest/core';
+import { assert, test } from 'rstack/test';
 
 const execAsync = promisify(exec);
 
